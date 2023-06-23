@@ -50,14 +50,14 @@ a.navbar-brand{
 .bg-light {
    background: transparent !important;
 }
-nav > #navbarNav > ul > li > a,body > nav > a{
+nav > #navbarNav > div >ul > li > a,body > nav a{
     color: #fff;
 }
 
 .bg-light.scrolled{
     background: #fff !important;
 }
-nav.scrolled > #navbarNav > ul > li > a,body > nav.scrolled > a{
+nav.scrolled > #navbarNav a,body > nav.scrolled a{
     color: var(--main-bg-color);
 }
 #topBar{
@@ -66,10 +66,15 @@ nav.scrolled > #navbarNav > ul > li > a,body > nav.scrolled > a{
     position: absolute;
     z-index: 1000 !important;
     width: 100%;
+    height: 2.8rem;
 }
 #topBar p{
     padding: 5px 0px;
     margin-bottom: 0;
+}
+
+.mt-10{
+    margin-top: 5rem !important;
 }
 
 #msgContainer{
@@ -78,6 +83,22 @@ nav.scrolled > #navbarNav > ul > li > a,body > nav.scrolled > a{
     position:absolute;
     font-size: 13px;
 }
+
+#msg p{
+    /*border-left: #000 2px solid;*/
+    padding-left:10px;
+
+}
+
+.border-left-msg{
+    border-left: 2px solid #000;
+    position: absolute;
+    top: 18%;
+    height: 2rem;
+}
+
+
+
 
 /* SECCION 1 */
 section.s1{
@@ -240,6 +261,11 @@ footer i{
     padding-top: 1rem;
 }
 
+@media(max-width:1000px){
+    .mt-10{
+        margin-top: 9rem !important;
+    }
+}
 
 @media(max-width: 700px) {
     
@@ -264,6 +290,9 @@ footer i{
     body > section.s4.container-fluid > div.text-center.container{
         width: 90% !important;
         padding-bottom: 40px;
+    }
+    .mt-10{
+        margin-top: 14rem !important;
     }
 }
 @media(max-width: 450px){

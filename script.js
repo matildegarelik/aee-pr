@@ -14,4 +14,5 @@ $(document).ready(function(){
 
 function showMsg(){
     $('#msg').toggle()
+    $('nav').toggleClass("mt-10")
 }

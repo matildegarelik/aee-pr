@@ -13,16 +13,26 @@
 </head>
 <body>
     <div id="topBar">
-        <div class="container">
-           <p><img src="images/logoPR.png" height="20"/> Portal oficial del Gobierno de Puerto Rico.   <button class="btn" style="background: none; color: #fff" onclick="showMsg()"><i class="fas fa-arrow-down"></i></button></p>
+        <div class="container" style="margin-bottom: -0.3rem;">
+           <p>
+            <img src="images/logoPR.png" height="40"/> 
+            Portal oficial del Gobierno de Puerto Rico.   
+            <button class="btn" style="background: none; color: #fff" onclick="showMsg()">
+                <i class="fas fa-chevron-down"></i>
+            </button>
+        </p>
         </div>
         <div style="width: 100%;" id="msgContainer">
             <div class="container" id="msg" style="display: none;">
                 <div class="row bg-light px-5">
                     <div class="col">
-                        <p><b>Un sitio web oficial .pr.gov</b> pertenece a una organización oficial del Gobierno de Puerto Rico.</p>
+                        <div class="border-left-msg"></div>
+                        <p>    <b>Un sitio web oficial .pr.gov</b> 
+                            pertenece a una organización oficial del Gobierno de Puerto Rico.
+                        </p>
                     </div>
                     <div class="col">
+                        <div class="border-left-msg"></div>
                         <p><b>Los sitios web seguros .pr.gov usan HTTPS,</b> lo que significa que usted se conectó de forma segura a un sitio web.</p>
                     </div>
                 </div>
@@ -32,6 +42,7 @@
 
     </div>
    <nav class="navbar navbar-expand-lg fixed-top navbar-default bg-light mt-5">
+    <div class="container">
         <a class="navbar-brand" href="#">
             <img src="images/Logo_aee_-03.png" height="100" class="d-inline-block align-top" id="logo">        </a>
         
@@ -57,6 +68,8 @@
               </li>
           </ul>
         </div>
+    </div>    
+        
       </nav>
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="overlay-txt">
