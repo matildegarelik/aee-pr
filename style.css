@@ -36,7 +36,8 @@ a.navbar-brand{
     bottom:40%;
     left:12%;
     color:#fff;
-    z-index:1
+    z-index:1;
+    width: 80%;
 }
 
 .carousel-item:after {
