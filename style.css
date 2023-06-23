@@ -102,7 +102,7 @@ div.container-grafica{
     margin: 2vw;
 }
 section.s1 > .btn{
-    width:25%;
+    min-width:25%;
     background-color: #fff;
     border: 1.5px solid var(--darker-blue);
     color: var(--darker-blue);
@@ -111,8 +111,7 @@ section.s1 > .btn{
 
 /* SECCIÓN 2 */
 section.s2{
-    height: 80vh;
-    min-height: 100%;
+    min-height: 80vh;
     background: url('images/poste.avif');
     background-size: cover;
     box-shadow: inset 0 0 0 2000px var(--main-bg-color-transp);
@@ -137,7 +136,7 @@ section.s2>div.text > p{
 
 /* SECCIÓN 3 */
 section.s3{
-    height: 100vh;
+    min-height: 100vh;
 }
 section.s3 > div.row >div > h2{
     color:var(--darker-blue);
@@ -166,8 +165,7 @@ section.s3 h4 i{
 
 /* SECCIÓN 4 */
 section.s4{
-    height: 80vh;
-    min-height: 100%;
+    min-height: 80vh;
     background: url('images/represa.webp');
     background-size: cover;
     box-shadow: inset 0 0 0 2000px var(--main-bg-color-transp);
@@ -198,7 +196,7 @@ section.s4 p{
 
 /* SECCIÓN 5 */
 section.s5{
-    height: 100vh;
+    min-height: 100vh;
 }
 section.s5 h2{
     color: var(--darker-blue);
@@ -243,6 +241,38 @@ footer i{
 }
 #footerBottom >div{
     padding-top: 1rem;
+}
+
+
+@media(max-width: 700px) {
+    
+    .overlay-txt{
+        top:30%;
+        bottom:5%;
+    }
+    body > section.s3.container-fluid > div.row.justify-content-center.mt-5 > div{
+        text-align: center;
+    }
+    .form-inline{
+        display:block;
+    }
+    #suscribeForm input, #suscribeBtn{
+        width: 80vw;
+        height: 3rem;
+        margin: auto;
+    }
+    #suscribeBtn{
+        margin-left: 6.5vw;
+    }
+    body > section.s4.container-fluid > div.text-center.container{
+        width: 90% !important;
+        padding-bottom: 40px;
+    }
+}
+@media(max-width: 450px){
+    #suscribeBtn{
+        margin-left: 4vw;
+    }
 }
 /** {
     outline: 1px solid #f00 !important;
