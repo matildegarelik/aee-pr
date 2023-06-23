@@ -262,7 +262,11 @@ footer i{
 #footerBottom >div{
     padding-top: 1rem;
 }
-
+@media(min-width:1200px){
+    .container{
+        width: 80%  !important;
+    }
+}
 @media(max-width:1000px){
     .mt-10{
         margin-top: 9rem !important;
