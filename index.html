@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autoridad de Energía eléctrica</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="fontawesome-free/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,18 +13,18 @@
 </head>
 <body>
     <div id="topBar">
-        <div class="container" style="margin-bottom: -0.3rem;">
+        <div class="container-sm" style="margin-bottom: -0.3rem;">
            <p>
-            <img src="images/logoPR.png" height="40"/> 
+            <img src="images/logoPR.png" height="30"/> 
             Portal oficial del Gobierno de Puerto Rico.   
             <button class="btn" style="background: none; color: #fff" onclick="showMsg()">
                 <i class="fas fa-chevron-down"></i>
             </button>
         </p>
         </div>
-        <div style="width: 100%;" id="msgContainer">
-            <div class="container" id="msg" style="display: none;">
-                <div class="row bg-light px-5">
+        <div style="width: 100%; display: none; " id="msgContainer">
+            <div class="container-sm" id="msg" style="padding:8px;">
+                <div class="row bg-light px-3">
                     <div class="col">
                         <div class="border-left-msg"></div>
                         <p>    <b>Un sitio web oficial .pr.gov</b> 
@@ -41,10 +41,10 @@
         </div>
 
     </div>
-   <nav class="navbar navbar-expand-lg fixed-top navbar-default bg-light mt-5">
-    <div class="container">
+   <nav class="navbar navbar-expand-lg navbar-default bg-light">
+    <div class="container-sm">
         <a class="navbar-brand" href="#">
-            <img src="images/Logo_aee_-03.png" height="100" class="d-inline-block align-top" id="logo">        </a>
+            <img src="images/Logo_aee_-03.png" height="90" class="d-inline-block align-top" id="logo">        </a>
         
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
@@ -73,8 +73,8 @@
       </nav>
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="overlay-txt">
-                <h1>Autoridad de <br> Energía Eléctrica</h1> 
-                <p style="width: 60%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue a eros at ullamcorper. Aliquam mi nibh, interdum ut sagittis nec, tincidunt quis mauris. Nullam tincidunt mi non lectus dignissim malesuada nec quis neque.</p>
+                <h1 class="mb-4">Autoridad de <br> Energía Eléctrica</h1> 
+                <p style="width: 60%; line-height: 29px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue a eros at ullamcorper. Aliquam mi nibh, interdum ut sagittis nec, tincidunt quis mauris. Nullam tincidunt mi non lectus dignissim malesuada nec quis neque.</p>
         </div>
 
         <div class="carousel-inner">
@@ -157,14 +157,17 @@
         <div class="text-center">
             <h2>We manage the  flow of PR' <br> power supply.</h2>
         </div>
-        <form class="form-inline justify-content-center" id="suscribeForm">
-            <div class="form-group mb-2">
+        <form class="form justify-content-center d-flex flex-row" id="suscribeForm">
+            <div class="form-group mb-2 mx-sm-2">
                 <input type="text" class="form-control" placeholder="Nombre*">
             </div>
-            <div class="form-group mx-sm-3 mb-2">
+            <div class="form-group mx-sm-1 mb-2">
                 <input type="text" class="form-control" placeholder="E-mail*">
             </div>
-            <button type="submit" class="btn btn-primary mb-2" id="suscribeBtn">Suscribete</button>
+            <div class="form-group mx-sm-2 mb-2">
+                <button type="submit" class="btn btn-primary mb-2 " id="suscribeBtn">Suscribete</button>
+            </div>
+            
         </form>
         <div class="text-center container" style="width: 60%;">
             <p>Use either normal contact forms, like the one above, or similar looking mailchimp forms that let your customer directly suscribe to your mailchimp newsletter!</p>
@@ -174,32 +177,32 @@
         <h2>We manage the  flow of PR' <br> power supply.</h2>
         <div class="row">
             <div class="col">
-                <div class="card">
+                <div class="card mt-3 mb-4">
                     <img class="card-img-top" src="images/card.png" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title">We manage the flow of PR' power supply</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amt, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title mt-3">We manage the flow of PR' power supply</h5>
+                      <p class="card-text mb-4 mt-3">Lorem ipsum dolor sit amt, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <a href="#" class="btn btn-primary">Leer más</a>
                     </div>
                   </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="card mt-3 mb-4">
                     <img class="card-img-top" src="images/card.png" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title">We manage the flow of PR' power supply</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amt, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title mt-3">We manage the flow of PR' power supply</h5>
+                      <p class="card-text mb-4 mt-3">Lorem ipsum dolor sit amt, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <a href="#" class="btn btn-primary">Leer más</a>
                     </div>
                   </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="card mt-3 mb-4">
                     <img class="card-img-top" src="images/card.png" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title">We manage the flow of PR' power supply</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amt, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title mt-3">We manage the flow of PR' power supply</h5>
+                      <p class="card-text mb-4 mt-3">Lorem ipsum dolor sit amt, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <a href="#" class="btn btn-primary">Leer más</a>
                     </div>
                   </div>
             </div>
