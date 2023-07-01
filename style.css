@@ -23,7 +23,23 @@ h1 {
     font-size: 3.0rem;
     /*font-weight: bold;*/
 }
-
+button.navbar-toggler{
+    color:white
+    
+}
+nav.scrolled button.navbar-toggler{
+    color: var(--darker-blue)
+}
+@media (max-width: 1000px) {
+    nav.bg-light.scrolled:has(.navbar-collapse.show)
+      {
+          background:#FFF !important;
+      }
+      nav.bg-light:has(.navbar-collapse.show)
+      {
+          background: var(--main-bg-color) !important;
+      }
+  }
 a.nav-link {
     font-size: 15px;
     font-weight: 400;
@@ -368,12 +384,6 @@ footer i {
         margin-top: 14rem !important;
     }
    
-}
-
-@media(max-width: 450px) {
-    #suscribeBtn {
-        /*margin-left: 4vw;*/
-    }
 }
 
 @media(max-width:1000px){
