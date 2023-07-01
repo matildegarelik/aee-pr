@@ -2,6 +2,7 @@
     --main-bg-color: rgb(0,113,165);
     --main-bg-color-transp: rgba(0,113,165,.7);
     --darker-blue: rgb(0,52,102);
+    --grey-bg: #F5F5F5;
 }
 
 .container {
@@ -412,7 +413,6 @@ a.btn-white{
     text-emphasis: none;
     text-decoration: none;
     border: 1px #fff solid;
-    margin-top: 4rem;
     margin-left: 15%;
 }
 section.s2_about a.btn{
@@ -485,7 +485,7 @@ section.s4_about img.img-s4{
 }
 
 section.s5_about{
-    background-color: rgba(247, 247, 247, 0.8);
+    background-color:var(--grey-bg);
 }
 
 section.s5_about .card{
@@ -521,6 +521,19 @@ section.s6_about h3{
 .form i{
     color:var(--darker-blue)
 }
+@media(max-width:1000px){
+    section.s3_about div.text{
+        width: 80%;
+    }
+}
+@media(max-width:800px){
+    section.s1_about div.text{
+        width: 80%;
+    }
+    .form{
+        width: 100%;
+    }
+}
 
 
 /* PÁGINA JUNTA */
@@ -530,3 +543,85 @@ section.s2_junta{
 section.s2_junta h2{
     color: var(--darker-blue);
 }
+
+
+/* SECCIÓN JUNTA */
+section.s2_j2{
+    background-color: #282828;
+    color: #fff;
+}
+
+section.s2_j2 .row .col{
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+section.s2_j2 .row .active{
+    color: var(--darker-blue);
+    background-color: #fff;
+}
+
+section.s2_j2 i{
+    font-size: 25px;
+}
+section.s3_j2 h2{
+    margin-top: 20vh;
+    color: var(--darker-blue);
+    margin-bottom: 10vh;
+}
+.anios{
+    color: gray;
+    border-right: 2px solid;
+}
+.anios p{
+    margin: 1.5rem 0;
+    padding: 0.5rem;
+}
+.anios p.activo{
+    background-color: #CCD7E0;
+    border-left: 3px solid var(--darker-blue);
+}
+.video-item div.icon-video{
+    background-color: #ccd7e0b9;
+    padding: 10px;
+    text-align: center;
+    color: var(--main-bg-color)
+}
+.video-item{
+    margin-bottom: 1rem;
+}
+
+
+/* PÁGINA DE MINNUTAs */
+section.s2_minutas{
+    background-color: var(--grey-bg);
+}
+section.s2_minutas h2{
+    color: var(--darker-blue);
+    padding: 15vh 0;
+}
+section.s3_minutas .icon-minuta{
+    background-color: #ccd7e0b9;
+    padding: 20px 10px;
+    text-align: center;
+    color: var(--darker-blue);
+    font-size: 40px;
+    margin: 0 15px;
+    border-radius: 5px;
+}
+.minuta-item a{
+    width: 80%;
+    background-color: transparent !important;
+    border: 1.5px solid var(--darker-blue);
+    color: var(--darker-blue);
+}
+section.s3_minutas .minuta-item{
+    padding: 2rem 1rem;;
+}
+section.s3_minutas .minuta-item.par{
+    background-color: var(--grey-bg);
+}
+section.s4_minutas{
+    background-color: var(--grey-bg);
+}
+
