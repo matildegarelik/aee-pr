@@ -553,9 +553,60 @@ section.s2_junta{
 section.s2_junta h2{
     color: var(--darker-blue);
 }
+section.s3_junta{
+    background-color:var(--grey-bg);
+}
+
+section.s3_junta .card{
+    background-color: transparent !important;
+}
+section.s3_junta h5{
+    color: #000 !important;
+}
+section.s3_junta a{
+    background-color: transparent !important;
+}
+section.s4_junta{
+    min-height: 60vh;
+    background: url('images/poste.avif');
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px var(--main-bg-color-transp);
+}
+
+section.s4_junta div.text {
+    padding-top: 15vh;
+    margin-left: 15%;
+    color: #fff;
+    width: 45rem;
+    margin-bottom: 2rem;
+}
+section.s4_junta div.text p{
+    margin-top: 3rem;
+}
+section.s4_junta h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+section.s4_junta a{
+    background-color: transparent !important;
+    border-color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    border-radius: 3px;
+}
+section.s4_junta i{
+    color: white;
+    margin-top: 80%;
+    font-size: 40px;
+}
 
 
-/* SECCIÓN JUNTA */
+
+
+/* PÁGINA JUNTA 2 */
 section.s2_j2{
     background-color: #282828;
     color: #fff;
