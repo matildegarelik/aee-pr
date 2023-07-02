@@ -627,6 +627,7 @@ section.s3_minutas .icon-minuta{
 }
 section.s3_minutas .minuta-item{
     padding: 2rem 1rem;;
+    margin: 0;
 }
 section.s3_minutas .minuta-item.par{
     background-color: var(--grey-bg);
