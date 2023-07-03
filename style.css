@@ -602,10 +602,47 @@ section.s4_junta i{
     margin-top: 80%;
     font-size: 40px;
 }
-
-
-
-
+section.s5_junta div.col{
+    padding: 15vh 3vh;
+    width: 40%;
+}
+section.s5_junta i{
+    font-size: 35px;
+    margin-right: 1vh;
+    color: var(--darker-blue);
+}
+section.s5_junta a{
+    background-color: transparent !important;
+    font-weight: 500;
+    color: var(--darker-blue);
+    font-size: 20px;
+    border-radius: 3px;
+    border-color: var(--darker-blue);
+    border-width: 2px;
+}
+section.s5_junta a:hover{
+    background-color: var(--darker-blue)!important;
+    color: white;
+    border-color: var(--darker-blue);
+}
+section.s5_junta div.par{
+    background-color: var(--grey-bg);
+}
+/*PÁGINA GOBERNANZA*/
+section.s2_gobernanza{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+section.s2_gobernanza h3{
+    color: var(--darker-blue);
+    margin-bottom: 4vh;
+}
+section.s2_gobernanza h4{
+    font-size: 30px;
+}
+section.s2_gobernanza.cards-wrapper{
+    display: flex;
+} 
 /* PÁGINA JUNTA 2 */
 section.s2_j2{
     background-color: #282828;
