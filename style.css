@@ -38,6 +38,11 @@ nav.scrolled button.navbar-toggler{
       nav.bg-light:has(.navbar-collapse.show)
       {
           background: var(--main-bg-color) !important;
+          padding-left:3rem;
+          padding-bottom: 1rem;
+      }
+      nav.bg-light:has(.navbar-collapse.show) a.navbar-brand{
+        margin-left: -1rem;
       }
   }
 a.nav-link {
@@ -328,11 +333,11 @@ footer i {
 #footerBottom {
     background: var(--darker-blue);
     font-size: small;
-    height: 3rem;
+    min-height: 3rem;
 }
 
 #footerBottom >div {
-    padding-top: 1rem;
+    padding: 1rem 0;
 }
 
 @media(min-width: 1200px) {
@@ -423,7 +428,15 @@ a.btn-white{
     text-emphasis: none;
     text-decoration: none;
     border: 1px #fff solid;
-    margin-left: 15%;
+    margin-top: 20px !important;
+}
+@media(max-width:700px){
+    a.btn-white, section.s1_about>div.text{
+        margin:auto
+    }
+    section.s1_about{
+        min-height: 100vh;
+    }
 }
 section.s2_about a.btn{
     min-width: 25%;
@@ -481,19 +494,33 @@ section.s3_about{
 
 section.s3_about div.text {
     padding-top: 15vh;
-    margin-left: 15%;
+    margin: auto;
     color: #fff;
     width: 45rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem !important;
 }
 section.s3_about div.text p{
     margin-top: 3rem;
 }
+section.s4_about h2, section.s5_about h2{
+    padding-bottom: 1rem !important;
+}
 section.s4_about img.img-s4{
     width: 90%;
     height: 13rem;
+    margin: auto;
 }
-
+@media(max-width:700px){
+    section.s4_about img.img-s4{
+        width: 100%;
+    }
+}
+section.s4_about div.row:first, section.s5_about div.row:first{
+    margin-top: 1.5rem;
+}
+section.s4_about h5{
+    margin-top:1.5rem;
+}
 section.s5_about{
     background-color:var(--grey-bg);
 }
@@ -507,19 +534,26 @@ section.s5_about h5{
 section.s5_about a{
     background-color: transparent !important;
 }
-
-section.s6_about h3{
+section.s_form{
+    padding: 15vh 0;
+}
+section.s_form h3{
     color:gray;
-    margin-top: 5rem;
     text-align: center;
+    margin-bottom: 3vh;
 }
 
-.form input, .form textarea, .form button{
+.form input, .form textarea, .form a{
     color: var(--darker-blue);
     border-radius: 2px;
     border-color: var(--darker-blue);
     margin: 1rem 0px;
+    width: 100%;
+    height: 2.5rem;
 } 
+.form textarea{
+    height: 6rem;
+}
 .form{
     width: 40rem;
     margin: auto;
@@ -605,9 +639,8 @@ section.s4_junta .badge{
     width: 4.5rem;
     height: 4.5rem;
 }
-section.s5_junta div.col{
+section.s5_junta div.col-md{
     padding: 15vh 3vh;
-    width: 40%;
 }
 section.s5_junta i{
     font-size: 35px;
@@ -688,9 +721,9 @@ section.s3_gobernanza a{
     border-color: var(--darker-blue);
     border-width: 2px;
 }
-section.s3_gobernanza a:hover{
+a.btn:hover{
     background-color: var(--darker-blue)!important;
-    color: white;
+    color: white !important;
     border-color: var(--darker-blue);
 }
 section.s3_gobernanza i{
@@ -723,25 +756,31 @@ body > section.s3_gobernanza.container-fluid > div > div > div:nth-child(2){
 
 /* PÁGINA JUNTA 2 */
 section.s2_j2{
-    background-color: #282828;
+    background-color: var(--darker-blue);
     color: #fff;
 }
 
-section.s2_j2 .row .col{
-    padding: 3rem 1rem;
+section.s2_j2 .row .col-md{
+    padding: 0 1rem;
+    height: 12rem;
     text-align: center;
 }
 
 section.s2_j2 .row .active{
     color: var(--darker-blue);
-    background-color: #fff;
+    background-color: var(--grey-bg);
 }
 
 section.s2_j2 i{
-    font-size: 25px;
+    font-size: 35px;
+    margin-right: 1rem;
+    margin-top: 4.5rem;
+}
+section.s2_j2 .s2_j2_title{
+    margin-top: 5rem;
 }
 section.s3_j2 h2{
-    margin-top: 20vh;
+    margin-top: 12vh;
     color: var(--darker-blue);
     margin-bottom: 10vh;
 }
@@ -753,9 +792,10 @@ section.s3_j2 h2{
     margin: 1.5rem 0;
     padding: 0.5rem;
 }
-.anios p.activo{
+.anios p.activo, .anios p:hover{
     background-color: #CCD7E0;
     border-left: 3px solid var(--darker-blue);
+    cursor: pointer;
 }
 .video-item div.icon-video{
     background-color: #ccd7e0b9;
@@ -774,7 +814,11 @@ section.s2_minutas{
 }
 section.s2_minutas h2{
     color: var(--darker-blue);
-    padding: 15vh 0;
+    padding: 12vh 0 5vh 0;
+}
+section.s3_minutas{
+    width: 80%;
+    margin:auto;
 }
 section.s3_minutas .icon-minuta{
     background-color: #ccd7e0b9;
@@ -783,7 +827,7 @@ section.s3_minutas .icon-minuta{
     color: var(--darker-blue);
     font-size: 40px;
     margin: 0 15px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .minuta-item a{
     width: 80%;
@@ -802,3 +846,11 @@ section.s4_minutas{
     background-color: var(--grey-bg);
 }
 
+@media(max-width:700px){
+    section.s3_minutas{
+        width: 98%;
+    }
+    section.s3_minutas h5{
+        padding-top: 1rem;
+    }
+}

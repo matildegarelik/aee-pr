@@ -12,6 +12,11 @@ $(document).ready(function(){
     })
 });
 
+$('.anios p').on('click',(e)=>{
+    $('.anios p.activo').removeClass('activo')
+    $(e.target).addClass('activo')
+})
+
 function showMsg(){
     $('#msgContainer').toggle()
     //$('nav').toggleClass("mt-10")
