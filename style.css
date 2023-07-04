@@ -670,7 +670,7 @@ section.s3_gobernanza h3{
     font-size: 35px;
 }
 section.s3_gobernanza{
-    padding: 10vh;
+    padding: 10vh 0;
     background-color: var(--grey-bg);
 }
 section.s3_gobernanza .col{
