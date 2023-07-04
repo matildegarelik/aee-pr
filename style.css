@@ -56,7 +56,7 @@ a.navbar-brand {
     min-height: 600px;
 }
 
-.carousel-item > img {
+.s0 .carousel-item > img {
     min-height: 100vh !important;
     max-height: 100vh !important;
 }
@@ -70,7 +70,7 @@ a.navbar-brand {
     width: 80%;
 }
 
-.carousel-item:after {
+.s0 .carousel-item:after {
     content: "";
     display: block;
     position: absolute;
@@ -567,15 +567,13 @@ section.s3_junta a{
     background-color: transparent !important;
 }
 section.s4_junta{
-    min-height: 60vh;
+    padding: 7vh 0;
     background: url('images/poste.avif');
     background-size: cover;
     box-shadow: inset 0 0 0 2000px var(--main-bg-color-transp);
 }
 
 section.s4_junta div.text {
-    padding-top: 15vh;
-    margin-left: 15%;
     color: #fff;
     width: 45rem;
     margin-bottom: 2rem;
@@ -598,9 +596,14 @@ section.s4_junta a{
     border-radius: 3px;
 }
 section.s4_junta i{
-    color: white;
-    margin-top: 80%;
+    color: var(--darker-blue);
     font-size: 40px;
+    margin-top: 7px;
+}
+section.s4_junta .badge{
+    background-color: white;
+    width: 4.5rem;
+    height: 4.5rem;
 }
 section.s5_junta div.col{
     padding: 15vh 3vh;
@@ -640,9 +643,84 @@ section.s2_gobernanza h3{
 section.s2_gobernanza h4{
     font-size: 30px;
 }
-section.s2_gobernanza.cards-wrapper{
-    display: flex;
-} 
+@media screen and (min-width: 568px){
+    .cards-wrapper{
+        display: flex;
+    }
+    section.s2_gobernanza .card{
+        margin: 0 auto;
+        width: calc(100%/2);
+    }
+}
+
+#CarouselGobernanza{
+    margin: 10vh 0;
+}
+@media screen and (max-width: 567px){
+    .card:not(:first-child){
+        display: none;
+    }
+    section.s2_gobernanza .card{
+        margin: 0 auto;
+    }
+}
+section.s3_gobernanza h3{
+    color: var(--darker-blue);
+    margin-bottom: 4vh;
+    font-size: 35px;
+}
+section.s3_gobernanza{
+    padding: 10vh;
+    background-color: var(--grey-bg);
+}
+section.s3_gobernanza .col{
+    text-align: center;
+}
+section.s3_gobernanza h4{
+    font-size: 20px;
+}
+section.s3_gobernanza a{
+    background-color: transparent !important;
+    font-weight: 500;
+    color: var(--darker-blue);
+    font-size: 20px;
+    border-radius: 3px;
+    border-color: var(--darker-blue);
+    border-width: 2px;
+}
+section.s3_gobernanza a:hover{
+    background-color: var(--darker-blue)!important;
+    color: white;
+    border-color: var(--darker-blue);
+}
+section.s3_gobernanza i{
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    color: red;
+    font-size: 40px;
+}
+body > section.s3_gobernanza.container-fluid > div > div > div:nth-child(2){
+    border-left: 0.5px solid grey;
+    border-right: 0.5px solid grey;
+   
+}
+@media screen and (max-width: 567px){
+    body > section.s3_gobernanza.container-fluid > div > div > div:nth-child(2){
+       border-style: hidden;
+       
+    }
+}
+@media screen and (max-width: 700px){
+    body > section.s3_gobernanza.container-fluid > div > div > div:nth-child(2){
+       border-style: hidden;
+       
+    }
+    body > section.s3_gobernanza.container-fluid > div > div > div:nth-child(1){
+        border-right:0.5px solid grey; ;
+    }
+}
+
+
 /* PÁGINA JUNTA 2 */
 section.s2_j2{
     background-color: #282828;
