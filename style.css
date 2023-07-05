@@ -672,6 +672,7 @@ section.s2_gobernanza{
 section.s2_gobernanza h3{
     color: var(--darker-blue);
     margin-bottom: 4vh;
+    font-size: 35px;
 }
 section.s2_gobernanza h4{
     font-size: 30px;
@@ -703,11 +704,13 @@ section.s3_gobernanza h3{
     font-size: 35px;
 }
 section.s3_gobernanza{
-    padding: 10vh 0;
+    padding: 10vh;
     background-color: var(--grey-bg);
 }
-section.s3_gobernanza .col{
+section.s3_gobernanza .col-md{
     text-align: center;
+    margin-top: 4vh;
+    padding: 0 5vh;
 }
 section.s3_gobernanza h4{
     font-size: 20px;
@@ -721,9 +724,9 @@ section.s3_gobernanza a{
     border-color: var(--darker-blue);
     border-width: 2px;
 }
-a.btn:hover{
+section.s3_gobernanza a:hover{
     background-color: var(--darker-blue)!important;
-    color: white !important;
+    color: white;
     border-color: var(--darker-blue);
 }
 section.s3_gobernanza i{
@@ -737,7 +740,7 @@ body > section.s3_gobernanza.container-fluid > div > div > div:nth-child(2){
     border-right: 0.5px solid grey;
    
 }
-@media screen and (max-width: 567px){
+@media screen and (max-width: 769px){
     body > section.s3_gobernanza.container-fluid > div > div > div:nth-child(2){
        border-style: hidden;
        
@@ -751,6 +754,13 @@ body > section.s3_gobernanza.container-fluid > div > div > div:nth-child(2){
     body > section.s3_gobernanza.container-fluid > div > div > div:nth-child(1){
         border-right:0.5px solid grey; ;
     }
+}
+@media screen and (max-width: 949px){
+    body > section.s3_gobernanza.container-fluid > div > div > div:nth-child(2){
+       border-right-style: hidden;
+       
+    }
+   
 }
 
 
