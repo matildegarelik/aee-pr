@@ -16,12 +16,10 @@ body {
 
 h2 {
     font-size: 2.5rem;
-    font-weight: 300;
 }
 
 h1 {
     font-size: 3.0rem;
-    /*font-weight: bold;*/
 }
 button.navbar-toggler{
     color:white
@@ -125,7 +123,6 @@ nav.scrolled > #navbarNav a,body > nav.scrolled a {
 #topBar p {
     padding: 0px 0px;
     margin-bottom: 0;
-    /* font-weight: 700; */
     font-size: 14px;
 }
 
@@ -206,7 +203,7 @@ section.s2>div.text {
 
 section.s2>div.text > p {
     margin-top: 10vh;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .title-subunw {
@@ -350,6 +347,10 @@ footer i {
     .mt-10 {
         margin-top: 9rem !important;
     }
+    #suscribeForm input, #suscribeBtn {
+        width: 200px;
+        margin:auto;
+    }
 }
 
 @media(max-width: 700px) {
@@ -391,10 +392,15 @@ footer i {
    
 }
 
-@media(max-width:1000px){
-    #suscribeForm input, #suscribeBtn {
-        width: 200px;
-        margin:auto;
+@media(max-width:500px){
+    #topBar p{
+        font-size: 11px;
+    }
+    #msgContainer{
+        height: 100px;
+    }
+    .border-left-msg{
+        height: 3.6rem;
     }
 }
 
@@ -430,14 +436,7 @@ a.btn-white{
     border: 1px #fff solid;
     margin-top: 20px !important;
 }
-@media(max-width:700px){
-    a.btn-white, section.s1_about>div.text{
-        margin:auto
-    }
-    section.s1_about{
-        min-height: 100vh;
-    }
-}
+
 section.s2_about a.btn{
     min-width: 25%;
     background-color: #fff;
@@ -494,7 +493,7 @@ section.s3_about{
 
 section.s3_about div.text {
     padding-top: 15vh;
-    margin: auto;
+    margin-left: 15%;
     color: #fff;
     width: 45rem;
     margin-bottom: 2rem !important;
@@ -503,18 +502,15 @@ section.s3_about div.text p{
     margin-top: 3rem;
 }
 section.s4_about h2, section.s5_about h2{
-    padding-bottom: 1rem !important;
+    padding-bottom: 5vh !important;
 }
+
 section.s4_about img.img-s4{
     width: 90%;
     height: 13rem;
     margin: auto;
 }
-@media(max-width:700px){
-    section.s4_about img.img-s4{
-        width: 100%;
-    }
-}
+
 section.s4_about div.row:first, section.s5_about div.row:first{
     margin-top: 1.5rem;
 }
@@ -534,6 +530,19 @@ section.s5_about h5{
 section.s5_about a{
     background-color: transparent !important;
 }
+
+@media(max-width:700px){
+    a.btn-white, section.s1_about>div.text, section.s3_about div.text {
+        margin:auto
+    }
+    section.s1_about{
+        min-height: 100vh;
+    }
+    section.s4_about img.img-s4{
+        width: 100%;
+    }
+}
+
 section.s_form{
     padding: 15vh 0;
 }
@@ -582,13 +591,17 @@ section.s_form h3{
 
 /* PÁGINA JUNTA */
 section.s2_junta{
-    padding: 25vh 0;
+    padding: 10vh 0;
 }
 section.s2_junta h2{
     color: var(--darker-blue);
 }
 section.s3_junta{
     background-color:var(--grey-bg);
+}
+
+section.s3_junta h2{
+    padding-bottom: 5vh;
 }
 
 section.s3_junta .card{
@@ -609,7 +622,6 @@ section.s4_junta{
 
 section.s4_junta div.text {
     color: #fff;
-    width: 45rem;
     margin-bottom: 2rem;
 }
 section.s4_junta div.text p{
@@ -617,7 +629,6 @@ section.s4_junta div.text p{
 }
 section.s4_junta h2{
     font-size: 2.5rem;
-    font-weight: 600;
 }
 section.s4_junta a{
     background-color: transparent !important;
@@ -640,7 +651,7 @@ section.s4_junta .badge{
     height: 4.5rem;
 }
 section.s5_junta div.col-md{
-    padding: 15vh 3vh;
+    padding: 10vh 3vh;
 }
 section.s5_junta i{
     font-size: 35px;
@@ -649,14 +660,13 @@ section.s5_junta i{
 }
 section.s5_junta a{
     background-color: transparent !important;
-    font-weight: 500;
     color: var(--darker-blue);
     font-size: 20px;
     border-radius: 3px;
     border-color: var(--darker-blue);
     border-width: 2px;
 }
-section.s5_junta a:hover{
+a.btn:hover{
     background-color: var(--darker-blue)!important;
     color: white;
     border-color: var(--darker-blue);
@@ -717,17 +727,11 @@ section.s3_gobernanza h4{
 }
 section.s3_gobernanza a{
     background-color: transparent !important;
-    font-weight: 500;
     color: var(--darker-blue);
     font-size: 20px;
     border-radius: 3px;
     border-color: var(--darker-blue);
     border-width: 2px;
-}
-section.s3_gobernanza a:hover{
-    background-color: var(--darker-blue)!important;
-    color: white;
-    border-color: var(--darker-blue);
 }
 section.s3_gobernanza i{
     margin-top: 5vh;
@@ -824,7 +828,13 @@ section.s2_minutas{
 }
 section.s2_minutas h2{
     color: var(--darker-blue);
-    padding: 12vh 0 5vh 0;
+    padding-bottom: 1.5rem;
+}
+section.s2_minutas .row{
+    padding: 12vh 0 8vh 0;
+}
+section.s2_minutas .texto{
+    padding-right: 2rem;
 }
 section.s3_minutas{
     width: 80%;
