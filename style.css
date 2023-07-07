@@ -5,9 +5,6 @@
     --grey-bg: #F5F5F5;
 }
 
-.container {
-    width: 80% !important;
-}
 
 body {
     font-family: 'Montserrat', sans-serif !important;
@@ -22,8 +19,10 @@ h1 {
     font-size: 3.0rem;
 }
 button.navbar-toggler{
-    color:white
-    
+    color:white 
+}
+button.navbar-toggler i{
+    margin-top: 0.5rem;
 }
 nav.scrolled button.navbar-toggler{
     color: var(--darker-blue)
@@ -43,6 +42,11 @@ nav.scrolled button.navbar-toggler{
         margin-left: -1rem;
       }
   }
+@media(max-width:700px){
+    nav.bg-light.scroled{
+        padding-top: 1.5rem;
+    }
+}
 a.nav-link {
     font-size: 15px;
     font-weight: 400;
@@ -262,6 +266,7 @@ body > section.s4.container-fluid > div > h2 {
     color: #fff;
     width: 18vw;
     height: 3rem;
+    margin: auto;
 }
 
 section.s4 .form-control::placeholder {
@@ -651,7 +656,7 @@ section.s4_junta .badge{
     height: 4.5rem;
 }
 section.s5_junta div.col-md{
-    padding: 10vh 3vh;
+    padding: 10vh 5vh;
 }
 section.s5_junta i{
     font-size: 35px;
@@ -714,7 +719,7 @@ section.s3_gobernanza h3{
     font-size: 35px;
 }
 section.s3_gobernanza{
-    padding: 10vh;
+    padding: 10vh 1vh;
     background-color: var(--grey-bg);
 }
 section.s3_gobernanza .col-md{
@@ -798,6 +803,9 @@ section.s3_j2 h2{
     color: var(--darker-blue);
     margin-bottom: 10vh;
 }
+section.s3_j2 h5{
+    font-size: 1rem;
+}
 .anios{
     color: gray;
     border-right: 2px solid;
@@ -866,11 +874,22 @@ section.s4_minutas{
     background-color: var(--grey-bg);
 }
 
+.s_form_g{
+    background-color: var(--grey-bg);
+}
+.s_form_g input, textarea{
+    background: transparent !important;
+}
+
 @media(max-width:700px){
     section.s3_minutas{
         width: 98%;
     }
     section.s3_minutas h5{
         padding-top: 1rem;
+    }
+    section.s3_minutas .icon-minuta{
+        margin-left: 0;
+        margin-right: 30px;
     }
 }
