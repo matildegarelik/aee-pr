@@ -364,6 +364,10 @@ footer i {
         bottom: 5%;
     }
 
+    .s0 .carousel-item > img {
+        width: auto !important;
+    }
+
     body > section.s3.container-fluid > div.row.justify-content-center.mt-5 > div {
         text-align: center;
     }
@@ -380,10 +384,6 @@ footer i {
     #suscribeForm{
         display: block !important;
         text-align: center;
-    }
-
-    #suscribeBtn {
-        margin-left: 6.5vw;
     }
 
     body > section.s4.container-fluid > div.text-center.container {
